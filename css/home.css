@@ -1,0 +1,295 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/*----------------MENU-----------------*/
+nav{
+    width: 100%;
+    display: flex;
+    background-color: lightgray;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+/*----------------LOGO-----------------*/
+.logo{
+    width: 10%;
+    margin-left: 130px;
+    margin-right: 34px;
+}  
+.logo img{
+    width: 100%;
+}
+/*--------------THẺ PHỤ------------------*/
+.under{
+    height: 120px;
+}
+/*---------------MENU TRÊN------------*/ 
+.menus{
+    width: 80%;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.search{
+    width: 70%;
+    display: flex;
+}
+.search>h4{
+    margin: 0;
+    width: 7%;
+}
+.search>input{
+    width: 88%;
+    height: 30px;
+    border: 1px solid red;
+    outline: none;
+}
+.search>a{
+    text-align: center;
+    display: block;
+    width: 5%;
+    padding-top: 8px;
+    background-color: red;
+    height: 25px;
+    border: 1px solid red;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-decoration: none;
+    color: white;
+}
+.account{
+    width: 30%;
+    display: flex;
+    margin-left: 100px;
+}
+.do-account{
+    width: 50%;
+    text-align: center;
+}
+.do-account>a{
+    background-color: orange;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding:10px;
+    width: 50%;
+}
+.do-account>a:hover{
+    background-color: white;
+}
+/*----------------MENU DƯỚI----------------*/
+.menu>.menu-2{
+    width: 50%;
+    text-align: center;
+}
+.second{
+    width: 95%;
+}
+.menu-2>a{
+    display: block;
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+}
+.menu-2>a:hover{
+    background-color: white;
+    border: 1px solid orange;
+}
+/*-------------------BUTTON GO TO TOP--------------*/
+#gototop{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-color: yellow;
+    border-radius: 10px;
+    opacity: 0.7;
+    font-size: 30px;
+}
+#gototop>a{
+    display: block;
+    padding: 15px;
+    color: black;
+}
+#gototop>a:hover{
+    border: 4px solid yellow;
+    background-color: white;
+}
+/*-------------------DANH MUC SP-------------*/
+header{
+    margin-left: 90px;
+}
+.bar{
+    float: left;
+    width: 15%;
+    margin: 10px;
+    padding: 0;
+    background-color: lightgray;
+}
+#danhmuc{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.bar>li{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #dedede;
+    text-align: center;
+    position: relative;
+}
+.bar>li>a{
+    text-align: left;
+}
+.bar>li>h4{
+    margin: 0;
+}
+.bar>li>a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.bar>li:hover{
+    background-color: white;
+    border: 1px solid #dedede;
+}
+/*---------------------DANH MUC AN-------------*/
+.danhmuc{
+    display: block;
+}
+.subbar{
+    width: 250px;
+    position: absolute; 
+    left: 212px;
+    top: 0;
+    list-style-type: none;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+.bar>li:hover .subbar{
+    background-color: white;
+    visibility: visible;
+    opacity: 1;
+}
+.subbar a{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+.subbar>li:hover{
+    background-color: white;
+    border: 1px solid lightgray;
+}
+/*-----------------HEADER---------------*/
+.intro{
+    float: right;
+    width: 80%;
+    height: 290px;
+    background-repeat: no-repeat;
+    margin: 10px 50px 10px 0px;
+    text-align: center;
+}
+.intro>img{
+    width: 100%;
+}
+/*-------------CONTENT--------------*/
+section{
+    margin-top: 20px;
+    clear: both;
+}
+.show-product{
+    margin: 20px 100px;
+}
+.product-title{
+    font-size: 25px;
+    background-color: #d7202c;
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.products{
+    background-color: whitesmoke;
+    display: flex;
+}
+.product{
+    width: 20%;
+    margin: 1%;
+    padding: 15px;
+    border: 1px solid black;
+}
+.product>a>img{
+    width: 100%;
+}
+.product>a>img:hover{
+    transform: scale(1.2);
+}
+.product>h1{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+}
+.product>h2{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.page{
+    text-align: center;
+}
+/*-----------------CSS FOOTER--------------*/
+.contact{
+    border-top: 5px solid red;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+.infor{
+    width: 33%;
+    border-right: 2px solid gray;
+}
+.question{
+    width: 33%;
+}
+.infor>ul{
+    list-style-type: none;
+    text-align: left;
+}
+.question>form>ul{
+    list-style-type: none;
+    text-align: left;
+}
+form>ul>li input{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}
+input[type=submit]{
+    width: 30%;
+    padding: 10px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+.final{
+    border-top: 2px solid red;
+    border-bottom: 3px solid red;
+    padding: 10px;
+    text-align: center;
+}
